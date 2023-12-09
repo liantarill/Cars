@@ -81,7 +81,7 @@ void login(){
 }
 
 void registration(){
-	string regId, regPassword, regid, regpass;
+	string regId, regPassword;
 	system("cls");
 	cout << "Enter Username : ";
 	cin >> regId;
