@@ -3,6 +3,7 @@
 #include <windows.h>
 #include "log.h"
 #include "loadpage.h"
+#include "MMSystem.h"
 
 class Car {
 public:
@@ -92,11 +93,13 @@ public:
     }
 
     void LoginPage() {
+        PlaySound(TEXT("menu.wav"), NULL, SND_ASYNC | SND_LOOP);
         Login();
         Menu();
     }
 
     void Menu() {
+        PlaySound(TEXT("menu.wav"), NULL, SND_ASYNC | SND_LOOP);
         initscr();
         curs_set(0);
         clear();
@@ -140,6 +143,7 @@ public:
     }
 
     void start() {
+        PlaySound(TEXT("megalovania.wav"), NULL, SND_ASYNC | SND_LOOP);
         initscr();
         timeout(0);
         noecho();
