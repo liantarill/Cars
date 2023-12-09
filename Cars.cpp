@@ -99,7 +99,6 @@ public:
     }
 
     void Menu() {
-        PlaySound(TEXT("menu.wav"), NULL, SND_ASYNC | SND_LOOP);
         initscr();
         curs_set(0);
         clear();
