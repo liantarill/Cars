@@ -56,6 +56,7 @@ void Login(){
 
 
 void login(){
+	int test;
 	string userId, Password, id, pass;
 	system("cls");
 	
@@ -70,13 +71,16 @@ void login(){
 	
 	while(data>>id>>pass){
 		if(id==userId && pass==Password){
-			system("cls");
+			test=1;
 		}
-		else{
-			system("cls");
-			cout << "LOGIN ERROR \nPlease check your username and password \n";
-			Login();
-		}
+	}
+	data.close();
+	if(test==1){
+		system("cls");	
+	}else{
+		system("cls");
+		cout << "LOGIN ERROR \nPlease check your username and password \n";
+		Login();
 	}
 }
 
